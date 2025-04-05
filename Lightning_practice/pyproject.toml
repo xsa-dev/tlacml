@@ -1,0 +1,22 @@
+[project]
+name = "tlacml"
+version = "0.1.0"
+description = "PyTorch Lightning utilities and custom components for MLOps"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+dependencies = [
+    "lightning[extra]>=2.5.1",
+    "matplotlib>=3.9.4",
+    "numpy>=2.0.2",
+    "pandas>=2.2.3",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+    "tqdm>=4.67.1",
+    "pytorch-lightning>=2.5.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/xsa-dev/tlacml"
+Documentation = "https://github.com/xsa-dev/tlacml#readme"
