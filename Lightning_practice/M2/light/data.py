@@ -22,8 +22,8 @@ class SignMNISTDataModule(LightningDataModule):
         # Data loading (called only on 1 GPU)
         import pandas as pd
 
-        self.train_df = pd.read_csv("../data/sign_mnist_train.csv")
-        self.test_df = pd.read_csv("../data/sign_mnist_test.csv")
+        self.train_df = pd.read_csv("./data//sign_mnist_train.csv")
+        self.test_df = pd.read_csv("./data//sign_mnist_test.csv")
 
     def setup(self, stage=None):
         # Split into train/val/test (called on every GPU)
