@@ -172,3 +172,4 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+./final_model_weights.pth
