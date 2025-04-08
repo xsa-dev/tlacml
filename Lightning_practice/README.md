@@ -31,11 +31,23 @@ make dev
 make start
 ```
 
+## Структура проекта
+
+```bash
+├── light/               # Основной пакет с модулями
+│   ├── __init__.py      # Инициализация пакета
+│   ├── data.py          # Модуль для работы с данными
+│   └── module.py        # Модуль с моделью нейронной сети
+├── main.py              # Точка входа в приложение
+├── pyproject.toml       # Конфигурация зависимостей
+└── Makefile             # Команды для управления проектом
+```
+
 ## Архитектура и workflow
 
 Проект реализует классификатор языка жестов на основе Sign MNIST датасета:
 
-### Data Pipeline (`SignMNISTDataModule`)
+### Data Pipeline (`light.data.SignMNISTDataModule`)
 
 - Загрузка CSV с изображениями 28x28 пикселей
 - Нормализация и аугментация данных:
@@ -48,7 +60,7 @@ transforms.RandomRotation(degrees=(-180, 180))
 
 - Разделение на train/val/test DataLoader'ы
 
-### Модель (`SignLanguageModel`)
+### Модель (`light.module.SignLanguageModel`)
 
 - CNN архитектура:
 
@@ -72,8 +84,9 @@ self.block1 = nn.Sequential(
 
 ```python
 Trainer(
+    accelerator="auto",
     max_epochs=10,
-    callbacks=[ModelCheckpoint(monitor="val_loss")]
+    callbacks=[ModelCheckpoint(monitor="train_loss")]
 )
 ```
 
@@ -81,6 +94,7 @@ Trainer(
 
 - Логирование метрик
 - Сохранение лучших весов
+- Автоматическое определение доступного ускорителя (CPU/GPU/Metal)
 
 Для запуска полного цикла используйте:
 
