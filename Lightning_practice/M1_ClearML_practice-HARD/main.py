@@ -278,6 +278,9 @@ def main():
     print("Завершение задачи ClearML...")
     task.mark_completed()
 
+    import os
+    os._exit(0)
+
 
 if __name__ == "__main__":
     main()
