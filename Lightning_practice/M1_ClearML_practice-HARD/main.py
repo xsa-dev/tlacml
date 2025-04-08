@@ -276,7 +276,7 @@ def main():
     
     # Улучшенное решение для завершения ClearML с учетом возможного медленного интернета
     print("Завершение задачи ClearML...")
-    task.close()
+    task.mark_completed()
 
 
 if __name__ == "__main__":
