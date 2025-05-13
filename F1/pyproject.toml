@@ -1,0 +1,20 @@
+[project]
+name = "f1"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "backtesting>=0.6.4",
+    "ccxt>=4.4.78",
+    "clearml>=1.18.0",
+    "gymnasium>=1.1.1",
+    "lightning[extra]>=2.5.1",
+    "matplotlib>=3.9.4",
+    "notebook>=7.4.2",
+    "numpy>=2.0.2",
+    "pandas>=2.2.3",
+    "pytorch-lightning>=2.5.1",
+    "torch>=2.6.0",
+    "tqdm>=4.67.1",
+]
