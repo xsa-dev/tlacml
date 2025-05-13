@@ -1,6 +1,6 @@
-# Crypto Trading with DRL (PPO) and Ensemble Models
+# Crypto Trading with Ensemble Models and Optional DRL (PPO)
 
-This project implements a cryptocurrency trading system for BTC/USDT using Deep Reinforcement Learning (PPO) and an ensemble of predictive models on second-resolution data.
+This project implements a cryptocurrency trading system for BTC/USDT using an ensemble of predictive models on second-resolution data, with optional Deep Reinforcement Learning (PPO) for enhanced trading strategies.
 
 ## Features
 
@@ -10,8 +10,8 @@ This project implements a cryptocurrency trading system for BTC/USDT using Deep 
   - GRU
   - 1D CNN
   - MLP
-- Ensemble model combining predictions from all models
-- PPO reinforcement learning agent for trading
+- Ensemble model combining predictions from all models for direct trading signals
+- Optional PPO reinforcement learning agent for advanced trading
 - PyTorch Lightning and ClearML integration
 - Performance comparison with Buy & Hold strategy
 - **Advanced backtesting** with comprehensive metrics and visualizations
@@ -56,16 +56,39 @@ pip install -r requirements.txt
 
 ### Training and Evaluation
 
-Run the main script to train models and evaluate performance:
+Run the main script to train models and evaluate performance using ensemble predictions directly:
 ```bash
 python main.py
 ```
 
+Train with the PPO agent for more advanced trading strategies:
+```bash
+python main.py --use-ppo
+```
+
 ### Backtesting Only
 
-To run backtesting on pre-trained models without retraining:
+To run backtesting with ensemble-based trading (default):
 ```bash
 python main.py --backtest-only
+```
+
+To run backtesting with the PPO agent:
+```bash
+python main.py --backtest-only --use-ppo
+```
+
+### Using Makefile
+
+The project includes a Makefile with common commands:
+```bash
+make train            # Train with ensemble models (default)
+make train-ppo        # Train with PPO agent
+make backtest         # Backtest with ensemble models
+make backtest-ppo     # Backtest with PPO agent
+make train-custom     # Train with custom parameters
+make backtest-custom  # Backtest with custom parameters
+make clean            # Remove generated models files and plots
 ```
 
 ### Command Line Arguments
@@ -85,6 +108,7 @@ python main.py --backtest-only
 - `--n-episodes`: Number of episodes for training PPO agent (default: 100)
 - `--max-steps`: Maximum number of steps per episode (default: 1000)
 - `--ensemble-method`: Method for combining predictions in the ensemble (default: weighted_average)
+- `--use-ppo`: Use PPO reinforcement learning agent for trading (default: False, use ensemble directly)
 
 #### ClearML Arguments
 - `--use-clearml`: Use ClearML for experiment tracking
@@ -125,6 +149,8 @@ The ensemble model combines predictions from all four models using one of the fo
 - Weighted Average: Weighted average of probabilities
 - Voting: Majority vote
 
+By default, the system uses the ensemble model's predictions directly to generate trading signals, without needing the PPO agent.
+
 ### Trading Environment
 
 The trading environment is implemented using Gymnasium. It simulates a cryptocurrency trading environment with the following actions:
@@ -132,9 +158,21 @@ The trading environment is implemented using Gymnasium. It simulates a cryptocur
 - Buy: Buy cryptocurrency with all available balance
 - Sell: Sell all cryptocurrency
 
-### PPO Agent
+### Trading Strategies
 
-The PPO (Proximal Policy Optimization) agent is implemented using PyTorch Lightning. It learns to trade based on the observations from the environment, which include market features and ensemble predictions.
+The system supports two main trading approaches:
+
+1. **Ensemble-based Trading (Default)**: Uses the ensemble model's predictions directly:
+   - Buy when predicted upward probability > threshold
+   - Sell when predicted upward probability < (1-threshold)
+   - Simple, rule-based approach that requires no reinforcement learning
+
+2. **PPO-based Trading (Optional)**: Uses the PPO agent for decision making:
+   - The PPO (Proximal Policy Optimization) agent is implemented using PyTorch Lightning
+   - Learns optimal trading strategies through trial and error
+   - Takes both market data and ensemble predictions into account
+   - More complex but potentially more adaptive to market conditions
+   - Enabled with the `--use-ppo` flag
 
 ### Backtesting
 
@@ -146,7 +184,7 @@ The backtesting functionality is implemented using the backtesting.py library. I
 
 ### Performance Evaluation
 
-The system evaluates the performance of the PPO agent by comparing it with a Buy & Hold strategy and other baseline strategies. It plots the portfolio value over time, visualizes the trading actions, and calculates key performance metrics.
+The system evaluates the performance of the trading strategy (either ensemble-based or PPO-based) by comparing it with a Buy & Hold strategy and other baseline strategies. It plots the portfolio value over time, visualizes the trading actions, and calculates key performance metrics.
 
 ## Results
 

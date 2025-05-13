@@ -388,7 +388,7 @@ def train_ppo(env: gym.Env,
             avg_reward = np.mean(episode_rewards[-log_interval:])
             print(f"Episode {episode + 1}/{n_episodes}, Avg Reward: {avg_reward:.2f}")
             
-            # Save best model
+            # Save best models
             if save_path and avg_reward > best_reward:
                 best_reward = avg_reward
                 agent.save_models(save_path)

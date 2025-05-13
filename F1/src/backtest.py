@@ -67,12 +67,32 @@ def prepare_backtest_data(df: pd.DataFrame) -> pd.DataFrame:
         if old_col in bt_data.columns:
             bt_data.rename(columns={old_col: new_col}, inplace=True)
     
-    # Ensure all required columns exist
+    # Check for missing required columns
     required_columns = ['Open', 'High', 'Low', 'Close', 'Volume', 'Signal']
     missing_columns = [col for col in required_columns if col not in bt_data.columns]
     
+    # Print column names for debugging
+    print(f"\nAvailable columns in dataframe: {bt_data.columns.tolist()}")
+    
     if missing_columns:
-        raise ValueError(f"Missing required columns: {missing_columns}")
+        print(f"Warning: Missing required columns: {missing_columns}")
+        
+        # Try to fix common issues
+        if 'Open' in missing_columns and 'open' in bt_data.columns:
+            bt_data['Open'] = bt_data['open']
+        if 'High' in missing_columns and 'high' in bt_data.columns:
+            bt_data['High'] = bt_data['high']
+        if 'Low' in missing_columns and 'low' in bt_data.columns:
+            bt_data['Low'] = bt_data['low']
+        if 'Close' in missing_columns and 'close' in bt_data.columns:
+            bt_data['Close'] = bt_data['close']
+        if 'Volume' in missing_columns and 'volume' in bt_data.columns:
+            bt_data['Volume'] = bt_data['volume']
+            
+        # Check again after fixes
+        missing_columns = [col for col in required_columns if col not in bt_data.columns]
+        if missing_columns:
+            raise ValueError(f"Still missing required columns after fixes: {missing_columns}")
     
     # Convert index to datetime if it's not already
     if not isinstance(bt_data.index, pd.DatetimeIndex):
@@ -141,12 +161,12 @@ def generate_signals_from_agent(env, agent, df: pd.DataFrame, window_size: int) 
     return df_signals
 
 
-def generate_signals_from_ensemble(ensemble_model, df: pd.DataFrame, window_size: int, threshold: float = 0.6) -> pd.DataFrame:
+def generate_signals_from_ensemble(ensemble_model, df: pd.DataFrame, window_size: int, threshold: float = 0.55) -> pd.DataFrame:
     """
-    Generate trading signals from an ensemble model.
+    Generate trading signals from an ensemble models.
     
     Args:
-        ensemble_model: Trained ensemble model
+        ensemble_model: Trained ensemble models
         df: DataFrame with OHLCV data and features
         window_size: Size of the observation window
         threshold: Probability threshold for buy/sell decisions
@@ -165,6 +185,23 @@ def generate_signals_from_ensemble(ensemble_model, df: pd.DataFrame, window_size
     # Get feature columns (all except 'timestamp' and 'direction')
     feature_cols = [col for col in df_signals.columns if col not in ['timestamp', 'direction']]
     
+    # Track our position to avoid repeated buy/sell signals
+    in_position = False
+    
+    # Track prediction probabilities for diagnostics
+    all_probs = []
+    
+    # For more aggressive strategy
+    buy_threshold = threshold - 0.02  # Lower threshold for buying
+    sell_threshold = 1 - threshold + 0.02  # Higher threshold for selling
+    
+    # Trend tracking variables
+    up_trend_count = 0
+    down_trend_count = 0
+    trend_memory = 5  # How many predictions to consider for trend
+    
+    print(f"Using buy threshold: {buy_threshold:.4f}, sell threshold: {sell_threshold:.4f}")
+    
     # Start from window_size
     for i in range(window_size, len(df_signals) - 1):
         # Get data for the current window
@@ -176,14 +213,45 @@ def generate_signals_from_ensemble(ensemble_model, df: pd.DataFrame, window_size
             probs = ensemble_model.predict(window_tensor)[0]
             up_prob = probs[1].item()  # Probability of price going up
         
-        # Generate signal based on prediction
-        if up_prob > threshold:
+        all_probs.append(up_prob)
+        
+        # Update trend counters
+        if up_prob > 0.5:
+            up_trend_count += 1
+            down_trend_count = max(0, down_trend_count - 1)
+        else:
+            down_trend_count += 1
+            up_trend_count = max(0, up_trend_count - 1)
+            
+        # Keep trend counters within range
+        up_trend_count = min(trend_memory, up_trend_count)
+        down_trend_count = min(trend_memory, down_trend_count)
+        
+        # More aggressive trading strategy with dynamic thresholds
+        if (up_prob > buy_threshold or up_trend_count >= trend_memory - 1) and not in_position:
             signals[i] = 1  # Buy
-        elif up_prob < 1 - threshold:
+            in_position = True
+            print(f"BUY signal at step {i}, up_prob: {up_prob:.4f}, up_trend: {up_trend_count}")
+        elif (up_prob < sell_threshold or down_trend_count >= trend_memory - 1) and in_position:
             signals[i] = -1  # Sell
+            in_position = False
+            print(f"SELL signal at step {i}, up_prob: {up_prob:.4f}, down_trend: {down_trend_count}")
     
     # Add signals to DataFrame
     df_signals['Signal'] = signals
+    
+    # Print diagnostics
+    all_probs = np.array(all_probs)
+    print(f"\nPrediction probabilities statistics:")
+    print(f"Min: {all_probs.min():.4f}, Max: {all_probs.max():.4f}, Mean: {all_probs.mean():.4f}")
+    print(f"Above buy threshold ({buy_threshold}): {(all_probs > buy_threshold).sum()} ({(all_probs > buy_threshold).sum() / len(all_probs) * 100:.2f}%)")
+    print(f"Below sell threshold ({sell_threshold}): {(all_probs < sell_threshold).sum()} ({(all_probs < sell_threshold).sum() / len(all_probs) * 100:.2f}%)")
+    print(f"In neutral zone: {((all_probs <= buy_threshold) & (all_probs >= sell_threshold)).sum()} ({((all_probs <= buy_threshold) & (all_probs >= sell_threshold)).sum() / len(all_probs) * 100:.2f}%)")
+    print(f"Total predictions: {len(all_probs)}")
+    
+    # Calculate potential signals based on trend analysis
+    print(f"Potential additional buy signals from trend analysis: {((all_probs <= buy_threshold) & (all_probs > 0.5)).sum()}")
+    print(f"Potential additional sell signals from trend analysis: {((all_probs >= sell_threshold) & (all_probs < 0.5)).sum()}")
     
     return df_signals
 
@@ -299,6 +367,11 @@ def compare_strategies(df: pd.DataFrame, strategies: Dict[str, np.ndarray],
         df_strategy = df.copy()
         df_strategy['Signal'] = signals
         
+        # Print signal counts for this strategy
+        buy_count = (signals == 1).sum()
+        sell_count = (signals == -1).sum()
+        print(f"\nStrategy '{name}': {buy_count} buy signals, {sell_count} sell signals")
+        
         # Run backtest
         bt_data = prepare_backtest_data(df_strategy)
         bt = Backtest(bt_data, SignalStrategy, cash=cash, commission=commission)
@@ -365,7 +438,8 @@ def create_buy_hold_signals(df: pd.DataFrame) -> np.ndarray:
         Array of signals (1 for buy at start, 0 elsewhere)
     """
     signals = np.zeros(len(df))
-    signals[0] = 1  # Buy at the beginning
+    signals[min(20, len(df)-1)] = 1  # Buy after a few ticks to match other strategies start time
+    print(f"Buy & Hold: 1 buy signal at position {min(20, len(df)-1)}")
     return signals
 
 
@@ -383,22 +457,38 @@ def create_sma_crossover_signals(df: pd.DataFrame, short_window: int = 20, long_
     """
     # Calculate moving averages
     df_temp = df.copy()
-    df_temp['short_ma'] = df_temp['Close'].rolling(window=short_window).mean()
-    df_temp['long_ma'] = df_temp['Close'].rolling(window=long_window).mean()
+    
+    # Use 'close' or 'Close' column depending on which exists
+    price_col = 'Close' if 'Close' in df_temp.columns else 'close'
+    
+    df_temp['short_ma'] = df_temp[price_col].rolling(window=short_window).mean()
+    df_temp['long_ma'] = df_temp[price_col].rolling(window=long_window).mean()
     
     # Initialize signals
     signals = np.zeros(len(df_temp))
+    
+    # Track position to create more realistic signals
+    in_position = False
     
     # Generate signals based on crossovers
     for i in range(long_window, len(df_temp)):
         # Golden cross (short MA crosses above long MA)
         if (df_temp['short_ma'].iloc[i-1] <= df_temp['long_ma'].iloc[i-1] and 
-            df_temp['short_ma'].iloc[i] > df_temp['long_ma'].iloc[i]):
+            df_temp['short_ma'].iloc[i] > df_temp['long_ma'].iloc[i] and
+            not in_position):
             signals[i] = 1  # Buy
+            in_position = True
         
         # Death cross (short MA crosses below long MA)
         elif (df_temp['short_ma'].iloc[i-1] >= df_temp['long_ma'].iloc[i-1] and 
-              df_temp['short_ma'].iloc[i] < df_temp['long_ma'].iloc[i]):
+              df_temp['short_ma'].iloc[i] < df_temp['long_ma'].iloc[i] and
+              in_position):
             signals[i] = -1  # Sell
+            in_position = False
+    
+    # Print diagnostic information
+    buy_count = (signals == 1).sum()
+    sell_count = (signals == -1).sum()
+    print(f"SMA Crossover ({short_window}/{long_window}): {buy_count} buy signals, {sell_count} sell signals")
     
     return signals

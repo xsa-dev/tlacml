@@ -24,7 +24,7 @@ class CryptoTradingEnv(gym.Env):
         
         Args:
             df: DataFrame with OHLCV data and features
-            ensemble_model: Ensemble model for price direction prediction
+            ensemble_model: Ensemble models for price direction prediction
             window_size: Size of the observation window
             initial_balance: Initial account balance
             transaction_fee: Fee for each transaction as a fraction of the transaction amount

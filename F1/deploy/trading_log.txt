@@ -1,0 +1,1237 @@
+2025-05-13 17:17:12,796 - live_trader - INFO - Connected to binance exchange
+2025-05-13 17:17:12,796 - live_trader - INFO - Loading LSTM model from lstm_model.pt...
+2025-05-13 17:17:12,802 - live_trader - INFO - Successfully loaded LSTM model
+2025-05-13 17:17:12,802 - live_trader - INFO - Loading GRU model from gru_model.pt...
+2025-05-13 17:17:12,804 - live_trader - INFO - Successfully loaded GRU model
+2025-05-13 17:17:12,804 - live_trader - INFO - Loading CNN model from cnn_model.pt...
+2025-05-13 17:17:12,807 - live_trader - INFO - Successfully loaded CNN model
+2025-05-13 17:17:12,807 - live_trader - INFO - Loading MLP model from mlp_model.pt...
+2025-05-13 17:17:12,809 - live_trader - INFO - Successfully loaded MLP model
+2025-05-13 17:17:12,809 - live_trader - INFO - LiveTrader initialized with: Symbol=BTC/USDT, Threshold=0.52, Dry Run=True
+2025-05-13 17:17:12,809 - live_trader - INFO - Running a single trading cycle
+2025-05-13 17:17:12,809 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:17:13,127 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:17:14,397 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:17:14,397 - live_trader - INFO - Not in position
+2025-05-13 17:18:20,754 - live_trader - INFO - Connected to binance exchange
+2025-05-13 17:18:20,754 - live_trader - INFO - Loading LSTM model from lstm_model.pt...
+2025-05-13 17:18:20,760 - live_trader - INFO - Successfully loaded LSTM model
+2025-05-13 17:18:20,760 - live_trader - INFO - Loading GRU model from gru_model.pt...
+2025-05-13 17:18:20,762 - live_trader - INFO - Successfully loaded GRU model
+2025-05-13 17:18:20,762 - live_trader - INFO - Loading CNN model from cnn_model.pt...
+2025-05-13 17:18:20,766 - live_trader - INFO - Successfully loaded CNN model
+2025-05-13 17:18:20,766 - live_trader - INFO - Loading MLP model from mlp_model.pt...
+2025-05-13 17:18:20,768 - live_trader - INFO - Successfully loaded MLP model
+2025-05-13 17:18:20,768 - live_trader - INFO - LiveTrader initialized with: Symbol=BTC/USDT, Threshold=0.52, Dry Run=True
+2025-05-13 17:18:20,768 - live_trader - INFO - Running a single trading cycle
+2025-05-13 17:18:20,769 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:18:21,822 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:18:22,647 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:18:22,647 - live_trader - INFO - Not in position
+2025-05-13 17:18:44,882 - live_trader - INFO - Connected to binance exchange
+2025-05-13 17:18:44,882 - live_trader - INFO - Loading LSTM model from lstm_model.pt...
+2025-05-13 17:18:44,886 - live_trader - INFO - Successfully loaded LSTM model
+2025-05-13 17:18:44,886 - live_trader - INFO - Loading GRU model from gru_model.pt...
+2025-05-13 17:18:44,888 - live_trader - INFO - Successfully loaded GRU model
+2025-05-13 17:18:44,888 - live_trader - INFO - Loading CNN model from cnn_model.pt...
+2025-05-13 17:18:44,890 - live_trader - INFO - Successfully loaded CNN model
+2025-05-13 17:18:44,890 - live_trader - INFO - Loading MLP model from mlp_model.pt...
+2025-05-13 17:18:44,892 - live_trader - INFO - Successfully loaded MLP model
+2025-05-13 17:18:44,893 - live_trader - INFO - LiveTrader initialized with: Symbol=BTC/USDT, Threshold=0.52, Dry Run=True
+2025-05-13 17:18:44,893 - live_trader - INFO - Running a single trading cycle
+2025-05-13 17:18:44,893 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:18:45,193 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:18:46,081 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:18:46,081 - live_trader - INFO - Not in position
+2025-05-13 17:19:02,496 - live_trader - INFO - Connected to binance exchange
+2025-05-13 17:19:02,496 - live_trader - INFO - Loading LSTM model from lstm_model.pt...
+2025-05-13 17:19:02,500 - live_trader - INFO - Successfully loaded LSTM model
+2025-05-13 17:19:02,500 - live_trader - INFO - Loading GRU model from gru_model.pt...
+2025-05-13 17:19:02,502 - live_trader - INFO - Successfully loaded GRU model
+2025-05-13 17:19:02,503 - live_trader - INFO - Loading CNN model from cnn_model.pt...
+2025-05-13 17:19:02,506 - live_trader - INFO - Successfully loaded CNN model
+2025-05-13 17:19:02,507 - live_trader - INFO - Loading MLP model from mlp_model.pt...
+2025-05-13 17:19:02,512 - live_trader - INFO - Successfully loaded MLP model
+2025-05-13 17:19:02,512 - live_trader - INFO - LiveTrader initialized with: Symbol=BTC/USDT, Threshold=0.52, Dry Run=True
+2025-05-13 17:19:02,512 - live_trader - INFO - Running continuous trading
+2025-05-13 17:19:02,512 - live_trader - INFO - Starting continuous trading with 60s interval
+2025-05-13 17:19:02,512 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:19:02,832 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:19:03,976 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:19:03,976 - live_trader - INFO - Not in position
+2025-05-13 17:19:03,976 - live_trader - INFO - Sleeping for 58.54s until next cycle
+2025-05-13 17:20:02,517 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:20:03,074 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:20:03,969 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:20:03,969 - live_trader - INFO - Not in position
+2025-05-13 17:20:03,969 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 17:21:02,519 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:21:02,866 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:21:03,747 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:21:03,747 - live_trader - INFO - Not in position
+2025-05-13 17:21:03,747 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 17:22:02,523 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:22:02,891 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:22:03,831 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:22:03,831 - live_trader - INFO - Not in position
+2025-05-13 17:22:03,831 - live_trader - INFO - Sleeping for 58.69s until next cycle
+2025-05-13 17:23:02,525 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:23:02,847 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:23:03,678 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:23:03,678 - live_trader - INFO - Not in position
+2025-05-13 17:23:03,678 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 17:24:02,560 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:24:02,884 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:24:03,728 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:24:03,728 - live_trader - INFO - Not in position
+2025-05-13 17:24:03,728 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 17:25:02,572 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:25:03,111 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:25:04,147 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:25:04,148 - live_trader - INFO - Not in position
+2025-05-13 17:25:04,148 - live_trader - INFO - Sleeping for 58.42s until next cycle
+2025-05-13 17:26:02,575 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:26:03,561 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:26:04,483 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:26:04,483 - live_trader - INFO - Not in position
+2025-05-13 17:26:04,483 - live_trader - INFO - Sleeping for 58.09s until next cycle
+2025-05-13 17:27:02,579 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:27:02,935 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:27:03,890 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:27:03,890 - live_trader - INFO - Not in position
+2025-05-13 17:27:03,890 - live_trader - INFO - Sleeping for 58.69s until next cycle
+2025-05-13 17:28:02,584 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:28:02,978 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:28:04,381 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:28:04,381 - live_trader - INFO - Not in position
+2025-05-13 17:28:04,381 - live_trader - INFO - Sleeping for 58.20s until next cycle
+2025-05-13 17:29:02,586 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:29:02,911 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:29:03,854 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:29:03,854 - live_trader - INFO - Not in position
+2025-05-13 17:29:03,854 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 17:30:02,588 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:30:02,925 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:30:03,763 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:30:03,763 - live_trader - INFO - Not in position
+2025-05-13 17:30:03,763 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 17:31:02,592 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:31:03,027 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:31:03,869 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:31:03,869 - live_trader - INFO - Not in position
+2025-05-13 17:31:03,869 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 17:32:02,592 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:32:03,158 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:32:04,014 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:32:04,014 - live_trader - INFO - Not in position
+2025-05-13 17:32:04,014 - live_trader - INFO - Sleeping for 58.58s until next cycle
+2025-05-13 17:33:02,595 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:33:03,206 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:33:04,050 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:33:04,050 - live_trader - INFO - Not in position
+2025-05-13 17:33:04,050 - live_trader - INFO - Sleeping for 58.54s until next cycle
+2025-05-13 17:34:02,599 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:34:02,986 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:34:03,848 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:34:03,848 - live_trader - INFO - Not in position
+2025-05-13 17:34:03,848 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 17:35:02,603 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:35:02,944 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:35:03,846 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:35:03,847 - live_trader - INFO - Not in position
+2025-05-13 17:35:03,847 - live_trader - INFO - Sleeping for 58.76s until next cycle
+2025-05-13 17:36:02,609 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:36:03,002 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:36:03,830 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:36:03,830 - live_trader - INFO - Not in position
+2025-05-13 17:36:03,830 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 17:37:02,607 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:37:02,927 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:37:03,914 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:37:03,914 - live_trader - INFO - Not in position
+2025-05-13 17:37:03,914 - live_trader - INFO - Sleeping for 58.69s until next cycle
+2025-05-13 17:38:02,613 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:38:03,183 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:38:04,057 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:38:04,057 - live_trader - INFO - Not in position
+2025-05-13 17:38:04,057 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 17:39:02,618 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:39:03,229 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:39:04,097 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:39:04,097 - live_trader - INFO - Not in position
+2025-05-13 17:39:04,097 - live_trader - INFO - Sleeping for 58.52s until next cycle
+2025-05-13 17:40:02,622 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:40:02,946 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:40:03,774 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:40:03,774 - live_trader - INFO - Not in position
+2025-05-13 17:40:03,774 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 17:41:02,627 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:41:03,391 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:41:04,248 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:41:04,249 - live_trader - INFO - Not in position
+2025-05-13 17:41:04,249 - live_trader - INFO - Sleeping for 58.38s until next cycle
+2025-05-13 17:42:02,629 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:42:02,945 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:42:03,775 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:42:03,775 - live_trader - INFO - Not in position
+2025-05-13 17:42:03,775 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 17:43:02,631 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:43:02,948 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:43:03,880 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:43:03,880 - live_trader - INFO - Not in position
+2025-05-13 17:43:03,880 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 17:44:02,633 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:44:02,940 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:44:03,864 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:44:03,864 - live_trader - INFO - Not in position
+2025-05-13 17:44:03,864 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 17:45:02,637 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:45:03,044 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:45:03,910 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:45:03,910 - live_trader - INFO - Not in position
+2025-05-13 17:45:03,910 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 17:46:02,638 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:46:02,970 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:46:03,826 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:46:03,827 - live_trader - INFO - Not in position
+2025-05-13 17:46:03,827 - live_trader - INFO - Sleeping for 58.81s until next cycle
+2025-05-13 17:47:02,642 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:47:02,967 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:47:03,867 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:47:03,867 - live_trader - INFO - Not in position
+2025-05-13 17:47:03,867 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 17:48:02,639 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:48:03,032 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:48:03,911 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:48:03,911 - live_trader - INFO - Not in position
+2025-05-13 17:48:03,911 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 17:49:02,641 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:49:02,971 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:49:03,930 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:49:03,930 - live_trader - INFO - Not in position
+2025-05-13 17:49:03,931 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 17:50:02,646 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:50:02,999 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:50:03,964 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:50:03,964 - live_trader - INFO - Not in position
+2025-05-13 17:50:03,964 - live_trader - INFO - Sleeping for 58.68s until next cycle
+2025-05-13 17:51:02,646 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:51:02,973 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:51:03,892 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:51:03,892 - live_trader - INFO - Not in position
+2025-05-13 17:51:03,892 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 17:52:02,648 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:52:03,075 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:52:03,905 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:52:03,905 - live_trader - INFO - Not in position
+2025-05-13 17:52:03,905 - live_trader - INFO - Sleeping for 58.74s until next cycle
+2025-05-13 17:53:02,652 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:53:03,288 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:53:04,174 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:53:04,174 - live_trader - INFO - Not in position
+2025-05-13 17:53:04,174 - live_trader - INFO - Sleeping for 58.48s until next cycle
+2025-05-13 17:54:02,658 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:54:03,080 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:54:04,149 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:54:04,150 - live_trader - INFO - Not in position
+2025-05-13 17:54:04,150 - live_trader - INFO - Sleeping for 58.51s until next cycle
+2025-05-13 17:55:02,661 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:55:03,276 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:55:04,304 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:55:04,304 - live_trader - INFO - Not in position
+2025-05-13 17:55:04,305 - live_trader - INFO - Sleeping for 58.36s until next cycle
+2025-05-13 17:56:02,665 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:56:03,163 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:56:04,005 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:56:04,005 - live_trader - INFO - Not in position
+2025-05-13 17:56:04,005 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 17:57:02,668 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:57:03,047 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:57:04,017 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:57:04,017 - live_trader - INFO - Not in position
+2025-05-13 17:57:04,017 - live_trader - INFO - Sleeping for 58.65s until next cycle
+2025-05-13 17:58:02,674 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:58:03,005 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:58:03,934 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:58:03,934 - live_trader - INFO - Not in position
+2025-05-13 17:58:03,934 - live_trader - INFO - Sleeping for 58.74s until next cycle
+2025-05-13 17:59:02,674 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 17:59:03,147 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 17:59:04,014 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 17:59:04,014 - live_trader - INFO - Not in position
+2025-05-13 17:59:04,014 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 18:00:02,680 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:00:03,605 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:00:04,440 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:00:04,440 - live_trader - INFO - Not in position
+2025-05-13 18:00:04,440 - live_trader - INFO - Sleeping for 58.24s until next cycle
+2025-05-13 18:01:02,681 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:01:03,836 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:01:04,901 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:01:04,901 - live_trader - INFO - Not in position
+2025-05-13 18:01:04,901 - live_trader - INFO - Sleeping for 57.78s until next cycle
+2025-05-13 18:02:02,685 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:02:03,009 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:02:03,854 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:02:03,855 - live_trader - INFO - Not in position
+2025-05-13 18:02:03,855 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 18:03:02,690 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:03:03,281 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:03:04,196 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:03:04,196 - live_trader - INFO - Not in position
+2025-05-13 18:03:04,196 - live_trader - INFO - Sleeping for 58.49s until next cycle
+2025-05-13 18:04:02,690 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:04:03,021 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:04:03,855 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:04:03,855 - live_trader - INFO - Not in position
+2025-05-13 18:04:03,855 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 18:05:02,694 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:05:03,324 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:05:04,369 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:05:04,371 - live_trader - INFO - Not in position
+2025-05-13 18:05:04,371 - live_trader - INFO - Sleeping for 58.32s until next cycle
+2025-05-13 18:06:02,699 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:06:03,071 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:06:03,976 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:06:03,976 - live_trader - INFO - Not in position
+2025-05-13 18:06:03,976 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 18:07:02,701 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:07:03,066 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:07:03,921 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:07:03,921 - live_trader - INFO - Not in position
+2025-05-13 18:07:03,921 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 18:08:02,706 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:08:03,049 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:08:04,009 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:08:04,009 - live_trader - INFO - Not in position
+2025-05-13 18:08:04,009 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 18:09:02,708 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:09:03,068 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:09:04,102 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:09:04,102 - live_trader - INFO - Not in position
+2025-05-13 18:09:04,102 - live_trader - INFO - Sleeping for 58.61s until next cycle
+2025-05-13 18:10:02,713 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:10:03,390 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:10:04,357 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:10:04,357 - live_trader - INFO - Not in position
+2025-05-13 18:10:04,357 - live_trader - INFO - Sleeping for 58.36s until next cycle
+2025-05-13 18:11:02,717 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:11:03,083 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:11:03,987 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:11:03,988 - live_trader - INFO - Not in position
+2025-05-13 18:11:03,988 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 18:12:02,718 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:12:03,148 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:12:04,044 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:12:04,045 - live_trader - INFO - Not in position
+2025-05-13 18:12:04,045 - live_trader - INFO - Sleeping for 58.67s until next cycle
+2025-05-13 18:13:02,727 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:13:03,029 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:13:03,882 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:13:03,882 - live_trader - INFO - Not in position
+2025-05-13 18:13:03,882 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 18:14:02,729 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:14:03,059 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:14:03,965 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:14:03,965 - live_trader - INFO - Not in position
+2025-05-13 18:14:03,965 - live_trader - INFO - Sleeping for 58.76s until next cycle
+2025-05-13 18:15:02,730 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:15:03,069 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:15:04,693 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:15:04,694 - live_trader - INFO - Not in position
+2025-05-13 18:15:04,694 - live_trader - INFO - Sleeping for 58.04s until next cycle
+2025-05-13 18:16:02,732 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:16:03,053 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:16:04,086 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:16:04,087 - live_trader - INFO - Not in position
+2025-05-13 18:16:04,087 - live_trader - INFO - Sleeping for 58.65s until next cycle
+2025-05-13 18:17:02,733 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:17:03,049 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:17:04,072 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:17:04,072 - live_trader - INFO - Not in position
+2025-05-13 18:17:04,072 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 18:18:02,737 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:18:03,068 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:18:03,931 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:18:03,931 - live_trader - INFO - Not in position
+2025-05-13 18:18:03,931 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 18:19:02,737 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:19:03,082 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:19:04,003 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:19:04,003 - live_trader - INFO - Not in position
+2025-05-13 18:19:04,004 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 18:20:02,739 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:20:03,069 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:20:03,986 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:20:03,986 - live_trader - INFO - Not in position
+2025-05-13 18:20:03,986 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 18:21:02,741 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:21:03,135 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:21:04,043 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:21:04,043 - live_trader - INFO - Not in position
+2025-05-13 18:21:04,043 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 18:22:02,743 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:22:03,143 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:22:04,041 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:22:04,041 - live_trader - INFO - Not in position
+2025-05-13 18:22:04,041 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 18:23:02,747 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:23:03,075 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:23:03,924 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:23:03,924 - live_trader - INFO - Not in position
+2025-05-13 18:23:03,924 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 18:24:02,753 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:24:03,084 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:24:03,983 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:24:03,983 - live_trader - INFO - Not in position
+2025-05-13 18:24:03,983 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 18:25:02,756 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:25:03,254 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:25:04,097 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:25:04,097 - live_trader - INFO - Not in position
+2025-05-13 18:25:04,097 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 18:26:02,760 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:26:03,135 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:26:04,104 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:26:04,104 - live_trader - INFO - Not in position
+2025-05-13 18:26:04,104 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 18:27:02,765 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:27:03,097 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:27:04,333 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:27:04,333 - live_trader - INFO - Not in position
+2025-05-13 18:27:04,333 - live_trader - INFO - Sleeping for 58.43s until next cycle
+2025-05-13 18:28:02,769 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:28:03,192 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:28:04,112 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:28:04,112 - live_trader - INFO - Not in position
+2025-05-13 18:28:04,112 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 18:29:02,773 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:29:03,111 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:29:03,993 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:29:03,993 - live_trader - INFO - Not in position
+2025-05-13 18:29:03,993 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 18:30:02,811 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:30:03,170 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:30:04,055 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:30:04,055 - live_trader - INFO - Not in position
+2025-05-13 18:30:04,055 - live_trader - INFO - Sleeping for 58.76s until next cycle
+2025-05-13 18:31:02,811 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:31:03,141 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:31:03,970 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:31:03,970 - live_trader - INFO - Not in position
+2025-05-13 18:31:03,970 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 18:32:02,817 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:32:03,161 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:32:03,987 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:32:03,987 - live_trader - INFO - Not in position
+2025-05-13 18:32:03,987 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 18:33:02,817 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:33:03,255 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:33:04,191 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:33:04,191 - live_trader - INFO - Not in position
+2025-05-13 18:33:04,191 - live_trader - INFO - Sleeping for 58.63s until next cycle
+2025-05-13 18:34:02,821 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:34:03,264 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:34:04,092 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:34:04,092 - live_trader - INFO - Not in position
+2025-05-13 18:34:04,092 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 18:35:02,826 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:35:03,582 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:35:04,414 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:35:04,414 - live_trader - INFO - Not in position
+2025-05-13 18:35:04,414 - live_trader - INFO - Sleeping for 58.41s until next cycle
+2025-05-13 18:36:02,830 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:36:03,164 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:36:03,987 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:36:03,987 - live_trader - INFO - Not in position
+2025-05-13 18:36:03,988 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 18:37:02,835 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:37:03,170 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:37:04,063 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:37:04,064 - live_trader - INFO - Not in position
+2025-05-13 18:37:04,064 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 18:38:02,831 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:38:03,172 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:38:04,003 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:38:04,003 - live_trader - INFO - Not in position
+2025-05-13 18:38:04,003 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 18:39:02,835 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:39:03,152 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:39:03,994 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:39:03,994 - live_trader - INFO - Not in position
+2025-05-13 18:39:03,994 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 18:40:02,836 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:40:03,167 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:40:04,010 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:40:04,010 - live_trader - INFO - Not in position
+2025-05-13 18:40:04,010 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 18:41:02,840 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:41:03,287 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:41:04,222 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:41:04,223 - live_trader - INFO - Not in position
+2025-05-13 18:41:04,223 - live_trader - INFO - Sleeping for 58.62s until next cycle
+2025-05-13 18:42:02,844 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:42:03,276 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:42:04,263 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:42:04,263 - live_trader - INFO - Not in position
+2025-05-13 18:42:04,263 - live_trader - INFO - Sleeping for 58.58s until next cycle
+2025-05-13 18:43:02,847 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:43:03,178 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:43:04,026 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:43:04,026 - live_trader - INFO - Not in position
+2025-05-13 18:43:04,026 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 18:44:02,856 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:44:03,189 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:44:04,017 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:44:04,017 - live_trader - INFO - Not in position
+2025-05-13 18:44:04,017 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 18:45:02,866 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:45:03,221 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:45:04,047 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:45:04,047 - live_trader - INFO - Not in position
+2025-05-13 18:45:04,047 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 18:46:02,875 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:46:03,204 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:46:04,027 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:46:04,027 - live_trader - INFO - Not in position
+2025-05-13 18:46:04,027 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 18:47:02,886 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:47:03,414 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:47:04,273 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:47:04,273 - live_trader - INFO - Not in position
+2025-05-13 18:47:04,273 - live_trader - INFO - Sleeping for 58.61s until next cycle
+2025-05-13 18:48:02,894 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:48:03,244 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:48:04,070 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:48:04,070 - live_trader - INFO - Not in position
+2025-05-13 18:48:04,070 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 18:49:02,904 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:49:03,522 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:49:04,346 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:49:04,346 - live_trader - INFO - Not in position
+2025-05-13 18:49:04,346 - live_trader - INFO - Sleeping for 58.56s until next cycle
+2025-05-13 18:50:02,913 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:50:03,312 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:50:04,203 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:50:04,203 - live_trader - INFO - Not in position
+2025-05-13 18:50:04,203 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 18:51:02,923 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:51:03,561 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:51:04,383 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:51:04,383 - live_trader - INFO - Not in position
+2025-05-13 18:51:04,383 - live_trader - INFO - Sleeping for 58.54s until next cycle
+2025-05-13 18:52:02,932 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:52:03,261 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:52:04,121 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:52:04,121 - live_trader - INFO - Not in position
+2025-05-13 18:52:04,121 - live_trader - INFO - Sleeping for 58.81s until next cycle
+2025-05-13 18:53:02,941 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:53:03,286 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:53:04,131 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:53:04,131 - live_trader - INFO - Not in position
+2025-05-13 18:53:04,131 - live_trader - INFO - Sleeping for 58.81s until next cycle
+2025-05-13 18:54:02,941 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:54:03,583 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:54:04,389 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:54:04,389 - live_trader - INFO - Not in position
+2025-05-13 18:54:04,389 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 18:55:02,950 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:55:03,379 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:55:04,204 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:55:04,204 - live_trader - INFO - Not in position
+2025-05-13 18:55:04,204 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 18:56:02,960 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:56:03,347 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:56:04,177 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:56:04,177 - live_trader - INFO - Not in position
+2025-05-13 18:56:04,177 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 18:57:02,969 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:57:03,359 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:57:04,186 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:57:04,186 - live_trader - INFO - Not in position
+2025-05-13 18:57:04,186 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 18:58:02,978 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:58:03,324 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:58:04,144 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:58:04,144 - live_trader - INFO - Not in position
+2025-05-13 18:58:04,144 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 18:59:02,988 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 18:59:03,323 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 18:59:04,145 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 18:59:04,145 - live_trader - INFO - Not in position
+2025-05-13 18:59:04,145 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 19:00:02,997 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:00:03,672 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:00:04,532 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:00:04,533 - live_trader - INFO - Not in position
+2025-05-13 19:00:04,533 - live_trader - INFO - Sleeping for 58.46s until next cycle
+2025-05-13 19:01:03,007 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:01:04,074 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:01:04,890 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:01:04,890 - live_trader - INFO - Not in position
+2025-05-13 19:01:04,890 - live_trader - INFO - Sleeping for 58.12s until next cycle
+2025-05-13 19:02:03,016 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:02:04,014 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:02:04,829 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:02:04,829 - live_trader - INFO - Not in position
+2025-05-13 19:02:04,829 - live_trader - INFO - Sleeping for 58.19s until next cycle
+2025-05-13 19:03:03,025 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:03:03,361 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:03:04,177 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:03:04,177 - live_trader - INFO - Not in position
+2025-05-13 19:03:04,177 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 19:04:03,035 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:04:03,466 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:04:04,285 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:04:04,285 - live_trader - INFO - Not in position
+2025-05-13 19:04:04,285 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 19:05:03,044 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:05:03,456 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:05:04,322 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:05:04,322 - live_trader - INFO - Not in position
+2025-05-13 19:05:04,322 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 19:06:03,054 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:06:03,449 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:06:04,272 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:06:04,272 - live_trader - INFO - Not in position
+2025-05-13 19:06:04,272 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 19:07:03,063 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:07:03,416 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:07:04,234 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:07:04,234 - live_trader - INFO - Not in position
+2025-05-13 19:07:04,235 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:08:03,072 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:08:03,518 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:08:04,338 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:08:04,338 - live_trader - INFO - Not in position
+2025-05-13 19:08:04,338 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 19:09:03,082 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:09:03,413 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:09:04,236 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:09:04,236 - live_trader - INFO - Not in position
+2025-05-13 19:09:04,236 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 19:10:03,091 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:10:03,499 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:10:04,361 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:10:04,361 - live_trader - INFO - Not in position
+2025-05-13 19:10:04,362 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 19:11:03,100 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:11:03,519 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:11:04,340 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:11:04,340 - live_trader - INFO - Not in position
+2025-05-13 19:11:04,340 - live_trader - INFO - Sleeping for 58.76s until next cycle
+2025-05-13 19:12:03,110 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:12:03,459 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:12:04,282 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:12:04,282 - live_trader - INFO - Not in position
+2025-05-13 19:12:04,282 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:13:03,119 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:13:03,449 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:13:04,271 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:13:04,271 - live_trader - INFO - Not in position
+2025-05-13 19:13:04,271 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 19:14:03,129 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:14:03,463 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:14:04,296 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:14:04,297 - live_trader - INFO - Not in position
+2025-05-13 19:14:04,297 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:15:03,138 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:15:03,474 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:15:04,292 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:15:04,292 - live_trader - INFO - Not in position
+2025-05-13 19:15:04,292 - live_trader - INFO - Sleeping for 58.85s until next cycle
+2025-05-13 19:16:03,147 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:16:03,612 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:16:04,437 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:16:04,437 - live_trader - INFO - Not in position
+2025-05-13 19:16:04,437 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 19:17:03,156 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:17:03,660 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:17:04,477 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:17:04,477 - live_trader - INFO - Not in position
+2025-05-13 19:17:04,477 - live_trader - INFO - Sleeping for 58.68s until next cycle
+2025-05-13 19:18:03,132 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:18:03,576 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:18:04,441 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:18:04,441 - live_trader - INFO - Not in position
+2025-05-13 19:18:04,441 - live_trader - INFO - Sleeping for 58.69s until next cycle
+2025-05-13 19:19:03,131 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:19:03,470 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:19:04,290 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:19:04,290 - live_trader - INFO - Not in position
+2025-05-13 19:19:04,290 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 19:20:03,130 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:20:03,473 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:20:04,289 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:20:04,289 - live_trader - INFO - Not in position
+2025-05-13 19:20:04,289 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 19:21:03,139 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:21:03,550 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:21:04,370 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:21:04,371 - live_trader - INFO - Not in position
+2025-05-13 19:21:04,371 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 19:22:03,148 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:22:03,855 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:22:04,682 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:22:04,682 - live_trader - INFO - Not in position
+2025-05-13 19:22:04,682 - live_trader - INFO - Sleeping for 58.47s until next cycle
+2025-05-13 19:23:03,156 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:23:03,587 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:23:04,453 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:23:04,453 - live_trader - INFO - Not in position
+2025-05-13 19:23:04,453 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 19:24:03,165 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:24:03,556 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:24:04,380 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:24:04,380 - live_trader - INFO - Not in position
+2025-05-13 19:24:04,380 - live_trader - INFO - Sleeping for 58.79s until next cycle
+2025-05-13 19:25:03,174 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:25:03,603 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:25:04,427 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:25:04,427 - live_trader - INFO - Not in position
+2025-05-13 19:25:04,427 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 19:26:03,183 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:26:03,534 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:26:04,350 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:26:04,350 - live_trader - INFO - Not in position
+2025-05-13 19:26:04,351 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:27:03,182 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:27:03,581 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:27:04,432 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:27:04,433 - live_trader - INFO - Not in position
+2025-05-13 19:27:04,433 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 19:28:03,185 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:28:03,536 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:28:04,694 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:28:04,694 - live_trader - INFO - Not in position
+2025-05-13 19:28:04,694 - live_trader - INFO - Sleeping for 58.49s until next cycle
+2025-05-13 19:29:03,189 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:29:03,544 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:29:04,372 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:29:04,372 - live_trader - INFO - Not in position
+2025-05-13 19:29:04,372 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 19:30:03,193 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:30:03,600 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:30:04,437 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:30:04,438 - live_trader - INFO - Not in position
+2025-05-13 19:30:04,438 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 19:31:03,196 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:31:03,572 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:31:04,498 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:31:04,498 - live_trader - INFO - Not in position
+2025-05-13 19:31:04,498 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 19:32:03,200 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:32:03,536 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:32:04,368 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:32:04,368 - live_trader - INFO - Not in position
+2025-05-13 19:32:04,368 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:33:03,203 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:33:03,652 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:33:04,474 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:33:04,475 - live_trader - INFO - Not in position
+2025-05-13 19:33:04,475 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 19:34:03,207 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:34:03,661 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:34:04,656 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:34:04,656 - live_trader - INFO - Not in position
+2025-05-13 19:34:04,656 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 19:35:03,211 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:35:03,567 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:35:04,384 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:35:04,384 - live_trader - INFO - Not in position
+2025-05-13 19:35:04,384 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:36:03,216 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:36:03,556 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:36:04,378 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:36:04,378 - live_trader - INFO - Not in position
+2025-05-13 19:36:04,378 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 19:37:03,218 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:37:03,828 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:37:04,718 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:37:04,719 - live_trader - INFO - Not in position
+2025-05-13 19:37:04,719 - live_trader - INFO - Sleeping for 58.50s until next cycle
+2025-05-13 19:38:03,222 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:38:03,547 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:38:04,399 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:38:04,399 - live_trader - INFO - Not in position
+2025-05-13 19:38:04,399 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 19:39:03,225 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:39:03,633 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:39:04,507 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:39:04,507 - live_trader - INFO - Not in position
+2025-05-13 19:39:04,507 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 19:40:03,229 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:40:03,556 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:40:04,506 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:40:04,506 - live_trader - INFO - Not in position
+2025-05-13 19:40:04,506 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 19:41:03,197 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:41:03,551 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:41:04,401 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:41:04,402 - live_trader - INFO - Not in position
+2025-05-13 19:41:04,402 - live_trader - INFO - Sleeping for 58.79s until next cycle
+2025-05-13 19:42:03,199 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:42:04,720 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:42:05,735 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:42:05,735 - live_trader - INFO - Not in position
+2025-05-13 19:42:05,735 - live_trader - INFO - Sleeping for 57.46s until next cycle
+2025-05-13 19:43:03,203 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:43:03,516 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:43:04,372 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:43:04,372 - live_trader - INFO - Not in position
+2025-05-13 19:43:04,372 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:44:03,206 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:44:03,559 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:44:04,403 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:44:04,403 - live_trader - INFO - Not in position
+2025-05-13 19:44:04,403 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 19:45:03,209 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:45:03,564 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:45:04,480 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:45:04,480 - live_trader - INFO - Not in position
+2025-05-13 19:45:04,480 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 19:46:03,213 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:46:03,688 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:46:04,507 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:46:04,507 - live_trader - INFO - Not in position
+2025-05-13 19:46:04,507 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 19:47:03,217 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:47:03,772 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:47:04,614 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:47:04,614 - live_trader - INFO - Not in position
+2025-05-13 19:47:04,614 - live_trader - INFO - Sleeping for 58.60s until next cycle
+2025-05-13 19:48:03,219 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:48:03,562 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:48:04,391 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:48:04,392 - live_trader - INFO - Not in position
+2025-05-13 19:48:04,392 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:49:03,222 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:49:03,630 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:49:04,453 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:49:04,453 - live_trader - INFO - Not in position
+2025-05-13 19:49:04,453 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 19:50:03,225 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:50:03,554 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:50:04,399 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:50:04,399 - live_trader - INFO - Not in position
+2025-05-13 19:50:04,399 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 19:51:03,228 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:51:04,768 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:51:05,623 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:51:05,623 - live_trader - INFO - Not in position
+2025-05-13 19:51:05,623 - live_trader - INFO - Sleeping for 57.61s until next cycle
+2025-05-13 19:52:03,232 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:52:03,842 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:52:04,741 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:52:04,741 - live_trader - INFO - Not in position
+2025-05-13 19:52:04,741 - live_trader - INFO - Sleeping for 58.49s until next cycle
+2025-05-13 19:53:03,235 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:53:03,686 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:53:04,556 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:53:04,556 - live_trader - INFO - Not in position
+2025-05-13 19:53:04,556 - live_trader - INFO - Sleeping for 58.68s until next cycle
+2025-05-13 19:54:03,238 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:54:03,656 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:54:04,481 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:54:04,481 - live_trader - INFO - Not in position
+2025-05-13 19:54:04,481 - live_trader - INFO - Sleeping for 58.76s until next cycle
+2025-05-13 19:55:03,241 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:55:03,574 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:55:04,439 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:55:04,439 - live_trader - INFO - Not in position
+2025-05-13 19:55:04,439 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 19:56:03,244 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:56:04,005 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:56:05,045 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:56:05,045 - live_trader - INFO - Not in position
+2025-05-13 19:56:05,045 - live_trader - INFO - Sleeping for 58.20s until next cycle
+2025-05-13 19:57:03,248 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:57:03,591 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:57:04,447 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:57:04,448 - live_trader - INFO - Not in position
+2025-05-13 19:57:04,448 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 19:58:03,251 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:58:03,578 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:58:04,415 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:58:04,415 - live_trader - INFO - Not in position
+2025-05-13 19:58:04,415 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 19:59:03,254 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 19:59:03,595 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 19:59:04,438 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 19:59:04,438 - live_trader - INFO - Not in position
+2025-05-13 19:59:04,438 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 20:00:03,258 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:00:03,673 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:00:04,509 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:00:04,509 - live_trader - INFO - Not in position
+2025-05-13 20:00:04,509 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 20:01:03,256 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:01:03,597 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:01:04,450 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:01:04,450 - live_trader - INFO - Not in position
+2025-05-13 20:01:04,450 - live_trader - INFO - Sleeping for 58.81s until next cycle
+2025-05-13 20:02:03,260 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:02:03,601 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:02:04,494 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:02:04,494 - live_trader - INFO - Not in position
+2025-05-13 20:02:04,494 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 20:03:03,263 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:03:03,591 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:03:04,429 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:03:04,430 - live_trader - INFO - Not in position
+2025-05-13 20:03:04,430 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 20:04:03,266 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:04:03,603 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:04:04,438 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:04:04,438 - live_trader - INFO - Not in position
+2025-05-13 20:04:04,438 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 20:05:03,269 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:05:03,703 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:05:04,529 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:05:04,530 - live_trader - INFO - Not in position
+2025-05-13 20:05:04,530 - live_trader - INFO - Sleeping for 58.74s until next cycle
+2025-05-13 20:06:03,228 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:06:03,611 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:06:04,585 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:06:04,585 - live_trader - INFO - Not in position
+2025-05-13 20:06:04,585 - live_trader - INFO - Sleeping for 58.64s until next cycle
+2025-05-13 20:07:03,227 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:07:03,741 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:07:04,597 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:07:04,597 - live_trader - INFO - Not in position
+2025-05-13 20:07:04,597 - live_trader - INFO - Sleeping for 58.63s until next cycle
+2025-05-13 20:08:03,231 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:08:03,650 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:08:04,479 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:08:04,479 - live_trader - INFO - Not in position
+2025-05-13 20:08:04,479 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 20:09:03,233 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:09:03,661 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:09:04,527 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:09:04,527 - live_trader - INFO - Not in position
+2025-05-13 20:09:04,527 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 20:10:03,235 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:10:03,724 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:10:04,566 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:10:04,566 - live_trader - INFO - Not in position
+2025-05-13 20:10:04,566 - live_trader - INFO - Sleeping for 58.67s until next cycle
+2025-05-13 20:11:03,239 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:11:03,677 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:11:04,520 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:11:04,520 - live_trader - INFO - Not in position
+2025-05-13 20:11:04,520 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 20:12:03,241 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:12:03,600 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:12:04,670 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:12:04,670 - live_trader - INFO - Not in position
+2025-05-13 20:12:04,670 - live_trader - INFO - Sleeping for 58.57s until next cycle
+2025-05-13 20:13:03,243 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:13:05,020 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:13:05,849 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:13:05,849 - live_trader - INFO - Not in position
+2025-05-13 20:13:05,849 - live_trader - INFO - Sleeping for 57.39s until next cycle
+2025-05-13 20:14:03,246 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:14:03,689 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:14:04,672 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:14:04,672 - live_trader - INFO - Not in position
+2025-05-13 20:14:04,672 - live_trader - INFO - Sleeping for 58.57s until next cycle
+2025-05-13 20:15:03,248 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:15:03,571 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:15:04,420 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:15:04,421 - live_trader - INFO - Not in position
+2025-05-13 20:15:04,421 - live_trader - INFO - Sleeping for 58.83s until next cycle
+2025-05-13 20:16:03,252 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:16:03,880 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:16:04,703 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:16:04,703 - live_trader - INFO - Not in position
+2025-05-13 20:16:04,703 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 20:17:03,254 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:17:03,677 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:17:04,642 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:17:04,643 - live_trader - INFO - Not in position
+2025-05-13 20:17:04,643 - live_trader - INFO - Sleeping for 58.61s until next cycle
+2025-05-13 20:18:03,256 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:18:03,578 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:18:04,466 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:18:04,466 - live_trader - INFO - Not in position
+2025-05-13 20:18:04,466 - live_trader - INFO - Sleeping for 58.79s until next cycle
+2025-05-13 20:19:03,260 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:19:03,794 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:19:04,626 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:19:04,626 - live_trader - INFO - Not in position
+2025-05-13 20:19:04,626 - live_trader - INFO - Sleeping for 58.63s until next cycle
+2025-05-13 20:20:03,262 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:20:03,735 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:20:04,737 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:20:04,737 - live_trader - INFO - Not in position
+2025-05-13 20:20:04,737 - live_trader - INFO - Sleeping for 58.52s until next cycle
+2025-05-13 20:21:03,264 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:21:03,626 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:21:04,449 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:21:04,449 - live_trader - INFO - Not in position
+2025-05-13 20:21:04,449 - live_trader - INFO - Sleeping for 58.81s until next cycle
+2025-05-13 20:22:03,267 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:22:03,964 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:22:04,819 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:22:04,819 - live_trader - INFO - Not in position
+2025-05-13 20:22:04,819 - live_trader - INFO - Sleeping for 58.45s until next cycle
+2025-05-13 20:23:03,270 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:23:05,483 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:23:06,338 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:23:06,338 - live_trader - INFO - Not in position
+2025-05-13 20:23:06,338 - live_trader - INFO - Sleeping for 56.93s until next cycle
+2025-05-13 20:24:03,272 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:24:03,651 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:24:04,473 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:24:04,473 - live_trader - INFO - Not in position
+2025-05-13 20:24:04,473 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 20:25:03,275 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:25:03,649 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:25:04,663 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:25:04,664 - live_trader - INFO - Not in position
+2025-05-13 20:25:04,664 - live_trader - INFO - Sleeping for 58.61s until next cycle
+2025-05-13 20:26:03,277 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:26:03,699 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:26:04,546 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:26:04,547 - live_trader - INFO - Not in position
+2025-05-13 20:26:04,547 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 20:27:03,281 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:27:03,708 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:27:04,569 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:27:04,569 - live_trader - INFO - Not in position
+2025-05-13 20:27:04,569 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 20:28:03,283 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:28:03,664 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:28:04,499 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:28:04,499 - live_trader - INFO - Not in position
+2025-05-13 20:28:04,499 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 20:29:03,281 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:29:03,695 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:29:04,570 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:29:04,570 - live_trader - INFO - Not in position
+2025-05-13 20:29:04,570 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 20:30:03,285 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:30:03,680 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:30:04,502 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:30:04,502 - live_trader - INFO - Not in position
+2025-05-13 20:30:04,502 - live_trader - INFO - Sleeping for 58.78s until next cycle
+2025-05-13 20:31:03,287 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:31:03,621 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:31:04,471 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:31:04,471 - live_trader - INFO - Not in position
+2025-05-13 20:31:04,471 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 20:32:03,289 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:32:03,609 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:32:04,471 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:32:04,471 - live_trader - INFO - Not in position
+2025-05-13 20:32:04,471 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 20:33:03,287 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:33:03,607 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:33:04,431 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:33:04,431 - live_trader - INFO - Not in position
+2025-05-13 20:33:04,431 - live_trader - INFO - Sleeping for 58.86s until next cycle
+2025-05-13 20:34:03,289 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:34:03,920 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:34:04,743 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:34:04,743 - live_trader - INFO - Not in position
+2025-05-13 20:34:04,743 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 20:35:03,293 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:35:03,636 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:35:04,495 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:35:04,495 - live_trader - INFO - Not in position
+2025-05-13 20:35:04,495 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 20:36:03,294 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:36:03,678 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:36:04,543 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:36:04,543 - live_trader - INFO - Not in position
+2025-05-13 20:36:04,543 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 20:37:03,297 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:37:03,675 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:37:04,580 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:37:04,580 - live_trader - INFO - Not in position
+2025-05-13 20:37:04,580 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 20:38:03,300 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:38:03,629 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:38:04,456 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:38:04,456 - live_trader - INFO - Not in position
+2025-05-13 20:38:04,456 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 20:39:03,302 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:39:03,924 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:39:04,750 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:39:04,750 - live_trader - INFO - Not in position
+2025-05-13 20:39:04,750 - live_trader - INFO - Sleeping for 58.55s until next cycle
+2025-05-13 20:40:03,305 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:40:03,705 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:40:04,532 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:40:04,532 - live_trader - INFO - Not in position
+2025-05-13 20:40:04,532 - live_trader - INFO - Sleeping for 58.77s until next cycle
+2025-05-13 20:41:03,305 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:41:03,796 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:41:04,626 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:41:04,626 - live_trader - INFO - Not in position
+2025-05-13 20:41:04,626 - live_trader - INFO - Sleeping for 58.68s until next cycle
+2025-05-13 20:42:03,308 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:42:05,619 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:42:06,441 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:42:06,442 - live_trader - INFO - Not in position
+2025-05-13 20:42:06,442 - live_trader - INFO - Sleeping for 56.87s until next cycle
+2025-05-13 20:43:03,311 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:43:03,641 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:43:04,472 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:43:04,472 - live_trader - INFO - Not in position
+2025-05-13 20:43:04,472 - live_trader - INFO - Sleeping for 58.84s until next cycle
+2025-05-13 20:44:03,313 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:44:03,969 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:44:04,797 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:44:04,797 - live_trader - INFO - Not in position
+2025-05-13 20:44:04,797 - live_trader - INFO - Sleeping for 58.52s until next cycle
+2025-05-13 20:45:03,315 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:45:03,775 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:45:04,604 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:45:04,604 - live_trader - INFO - Not in position
+2025-05-13 20:45:04,604 - live_trader - INFO - Sleeping for 58.71s until next cycle
+2025-05-13 20:46:03,407 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:46:03,809 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:46:04,819 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:46:04,819 - live_trader - INFO - Not in position
+2025-05-13 20:46:04,819 - live_trader - INFO - Sleeping for 58.59s until next cycle
+2025-05-13 20:47:03,410 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:47:03,826 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:47:04,658 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:47:04,658 - live_trader - INFO - Not in position
+2025-05-13 20:47:04,658 - live_trader - INFO - Sleeping for 58.75s until next cycle
+2025-05-13 20:48:03,414 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:48:04,044 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:48:04,877 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:48:04,878 - live_trader - INFO - Not in position
+2025-05-13 20:48:04,878 - live_trader - INFO - Sleeping for 58.54s until next cycle
+2025-05-13 20:49:03,415 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:49:03,828 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:49:04,686 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:49:04,686 - live_trader - INFO - Not in position
+2025-05-13 20:49:04,686 - live_trader - INFO - Sleeping for 58.73s until next cycle
+2025-05-13 20:50:03,419 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:50:03,730 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:50:04,620 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:50:04,621 - live_trader - INFO - Not in position
+2025-05-13 20:50:04,621 - live_trader - INFO - Sleeping for 58.80s until next cycle
+2025-05-13 20:51:03,423 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:51:03,841 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:51:04,702 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:51:04,703 - live_trader - INFO - Not in position
+2025-05-13 20:51:04,703 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 20:52:03,427 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:52:03,806 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:52:04,767 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:52:04,767 - live_trader - INFO - Not in position
+2025-05-13 20:52:04,767 - live_trader - INFO - Sleeping for 58.66s until next cycle
+2025-05-13 20:53:03,427 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:53:03,776 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:53:04,943 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:53:04,943 - live_trader - INFO - Not in position
+2025-05-13 20:53:04,943 - live_trader - INFO - Sleeping for 58.48s until next cycle
+2025-05-13 20:54:03,430 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:54:03,808 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:54:04,707 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:54:04,707 - live_trader - INFO - Not in position
+2025-05-13 20:54:04,707 - live_trader - INFO - Sleeping for 58.72s until next cycle
+2025-05-13 20:55:03,433 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:55:03,780 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:55:05,554 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:55:05,554 - live_trader - INFO - Not in position
+2025-05-13 20:55:05,554 - live_trader - INFO - Sleeping for 57.88s until next cycle
+2025-05-13 20:56:03,436 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:56:03,886 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:56:04,752 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:56:04,752 - live_trader - INFO - Not in position
+2025-05-13 20:56:04,752 - live_trader - INFO - Sleeping for 58.68s until next cycle
+2025-05-13 20:57:03,438 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:57:04,201 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:57:05,398 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:57:05,398 - live_trader - INFO - Not in position
+2025-05-13 20:57:05,398 - live_trader - INFO - Sleeping for 58.04s until next cycle
+2025-05-13 20:58:03,442 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:58:03,885 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:58:05,136 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:58:05,136 - live_trader - INFO - Not in position
+2025-05-13 20:58:05,136 - live_trader - INFO - Sleeping for 58.30s until next cycle
+2025-05-13 20:59:03,447 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 20:59:03,885 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 20:59:04,959 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 20:59:04,959 - live_trader - INFO - Not in position
+2025-05-13 20:59:04,959 - live_trader - INFO - Sleeping for 58.49s until next cycle
+2025-05-13 21:00:03,445 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:00:03,749 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:00:05,855 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:00:05,856 - live_trader - INFO - Not in position
+2025-05-13 21:00:05,856 - live_trader - INFO - Sleeping for 57.59s until next cycle
+2025-05-13 21:01:03,451 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:01:03,890 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:01:05,050 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:01:05,050 - live_trader - INFO - Not in position
+2025-05-13 21:01:05,050 - live_trader - INFO - Sleeping for 58.40s until next cycle
+2025-05-13 21:02:03,457 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:02:03,797 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:02:04,897 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:02:04,897 - live_trader - INFO - Not in position
+2025-05-13 21:02:04,897 - live_trader - INFO - Sleeping for 58.56s until next cycle
+2025-05-13 21:03:03,457 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:03:03,850 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:03:05,261 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:03:05,261 - live_trader - INFO - Not in position
+2025-05-13 21:03:05,261 - live_trader - INFO - Sleeping for 58.20s until next cycle
+2025-05-13 21:04:03,462 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:04:04,051 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:04:05,031 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:04:05,031 - live_trader - INFO - Not in position
+2025-05-13 21:04:05,031 - live_trader - INFO - Sleeping for 58.43s until next cycle
+2025-05-13 21:05:03,466 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:05:03,856 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:05:04,730 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:05:04,730 - live_trader - INFO - Not in position
+2025-05-13 21:05:04,730 - live_trader - INFO - Sleeping for 58.74s until next cycle
+2025-05-13 21:06:03,470 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:06:03,990 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:06:04,821 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:06:04,821 - live_trader - INFO - Not in position
+2025-05-13 21:06:04,821 - live_trader - INFO - Sleeping for 58.65s until next cycle
+2025-05-13 21:07:03,474 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:07:03,910 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:07:04,772 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:07:04,772 - live_trader - INFO - Not in position
+2025-05-13 21:07:04,772 - live_trader - INFO - Sleeping for 58.70s until next cycle
+2025-05-13 21:08:03,477 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:08:03,828 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:08:04,669 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:08:04,670 - live_trader - INFO - Not in position
+2025-05-13 21:08:04,670 - live_trader - INFO - Sleeping for 58.81s until next cycle
+2025-05-13 21:09:03,528 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:09:03,871 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:09:04,709 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:09:04,709 - live_trader - INFO - Not in position
+2025-05-13 21:09:04,709 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 21:10:03,534 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:10:03,941 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:10:04,772 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:10:04,772 - live_trader - INFO - Not in position
+2025-05-13 21:10:04,772 - live_trader - INFO - Sleeping for 58.76s until next cycle
+2025-05-13 21:11:03,537 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:11:03,865 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:11:04,721 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:11:04,721 - live_trader - INFO - Not in position
+2025-05-13 21:11:04,721 - live_trader - INFO - Sleeping for 58.82s until next cycle
+2025-05-13 21:12:03,541 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:12:04,081 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:12:04,898 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:12:04,898 - live_trader - INFO - Not in position
+2025-05-13 21:12:04,898 - live_trader - INFO - Sleeping for 58.64s until next cycle
+2025-05-13 21:13:03,546 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:13:05,733 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:13:08,251 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:13:08,251 - live_trader - INFO - Not in position
+2025-05-13 21:13:08,251 - live_trader - INFO - Sleeping for 55.29s until next cycle
+2025-05-13 21:14:03,551 - live_trader - INFO - Fetching 500 candles of 1m data for BTC/USDT
+2025-05-13 21:14:04,014 - live_trader - INFO - Successfully fetched and prepared data with shape (401, 29)
+2025-05-13 21:14:04,861 - live_trader - INFO - Generated signal: 0.0
+2025-05-13 21:14:04,861 - live_trader - INFO - Not in position
+2025-05-13 21:14:04,861 - live_trader - INFO - Sleeping for 58.69s until next cycle

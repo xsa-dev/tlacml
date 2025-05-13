@@ -6,16 +6,16 @@ from typing import List, Dict, Union, Tuple
 
 class EnsembleModel:
     """
-    Ensemble model that combines predictions from multiple models.
+    Ensemble models that combines predictions from multiple models.
     """
     def __init__(self, models: List[nn.Module], ensemble_method: str = 'average', weights: List[float] = None):
         """
-        Initialize the ensemble model.
+        Initialize the ensemble models.
         
         Args:
             models: List of trained models to ensemble
             ensemble_method: Method to combine predictions ('average', 'weighted_average', or 'voting')
-            weights: Weights for each model (only used if ensemble_method is 'weighted_average')
+            weights: Weights for each models (only used if ensemble_method is 'weighted_average')
         """
         self.models = models
         self.ensemble_method = ensemble_method
@@ -59,7 +59,7 @@ class EnsembleModel:
                 
             elif self.ensemble_method == 'voting':
                 # Hard voting (majority vote)
-                # Get class predictions from each model
+                # Get class predictions from each models
                 class_preds = [torch.argmax(prob, dim=1) for prob in probabilities]
                 stacked_preds = torch.stack(class_preds)
                 
@@ -93,7 +93,7 @@ class EnsembleModel:
     
     def evaluate(self, dataloader) -> Dict[str, float]:
         """
-        Evaluate the ensemble model on a dataset.
+        Evaluate the ensemble models on a dataset.
         
         Args:
             dataloader: PyTorch DataLoader containing evaluation data
@@ -116,19 +116,19 @@ class EnsembleModel:
     
     def get_model_weights(self) -> List[float]:
         """
-        Get the weights assigned to each model.
+        Get the weights assigned to each models.
         
         Returns:
-            List of weights for each model
+            List of weights for each models
         """
         return self.weights
     
     def set_model_weights(self, weights: List[float]) -> None:
         """
-        Set the weights for each model.
+        Set the weights for each models.
         
         Args:
-            weights: List of weights for each model
+            weights: List of weights for each models
         """
         # Normalize weights to sum to 1
         total = sum(weights)
@@ -146,7 +146,7 @@ class EnsembleModel:
         # Initialize weights
         weights = torch.tensor(self.weights, requires_grad=True)
         
-        # Collect all model predictions on validation data
+        # Collect all models predictions on validation data
         all_preds = []
         all_targets = []
         
