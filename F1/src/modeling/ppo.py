@@ -171,7 +171,7 @@ class PPOAgent(pl.LightningModule):
             gae_lambda: Lambda parameter for GAE
             policy_clip: Clipping parameter for PPO
             batch_size: Size of batches for training
-            n_epochs: Number of epochs to train on each batch of data
+            n_epochs: Number of epochs to train on each batch of timeseries
             value_coef: Coefficient for value loss
             entropy_coef: Coefficient for entropy bonus
         """
@@ -304,7 +304,7 @@ class PPOAgent(pl.LightningModule):
         Training step for PyTorch Lightning.
         
         Args:
-            batch: Batch of data
+            batch: Batch of timeseries
             batch_idx: Index of the batch
             
         Returns:

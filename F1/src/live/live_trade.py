@@ -1,13 +1,7 @@
-import os
-import time
 import argparse
-import pandas as pd
-import numpy as np
 import torch
-import ccxt
 import logging
-from datetime import datetime
-from data import prepare_data
+# from timeseries import prepare_market_data as prepare_data
 from models import LSTMPredictor, GRUPredictor, CNNPredictor, MLPPredictor
 from ensemble import EnsembleModel
 from backtest import generate_signals_from_ensemble
@@ -17,7 +11,7 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("../deploy/trading_log.txt"),
+        logging.FileHandler("../../references/deploy/trading_log.txt"),
         logging.StreamHandler()
     ]
 )
@@ -127,7 +121,7 @@ class LiveTrader:
     def _load_models(self, model_paths):
         """Load pre-trained models."""
         models = {}
-        input_size = 28  # Default assumption, will be updated when fetching data
+        input_size = 28  # Default assumption, will be updated when fetching timeseries
         
         for name, path in model_paths.items():
             if os.path.exists(path):
@@ -159,30 +153,30 @@ class LiveTrader:
     
     def fetch_latest_data(self, limit=500):
         """
-        Fetch and prepare the latest market data.
+        Fetch and prepare the latest market timeseries.
         
         Args:
             limit: Number of candles to fetch (default: 500)
             
         Returns:
-            DataFrame with normalized data
+            DataFrame with normalized timeseries
         """
         try:
-            logger.info(f"Fetching {limit} candles of {self.timeframe} data for {self.symbol}")
+            logger.info(f"Fetching {limit} candles of {self.timeframe} timeseries for {self.symbol}")
             
             if self.exchange is None and self.dry_run:
-                # Use local data for dry run if exchange is not connected
-                logger.info("Using local data for dry run")
+                # Use local timeseries for dry run if exchange is not connected
+                logger.info("Using local timeseries for dry run")
                 _, _, _, _, _, _, df_normalized = prepare_data(
                     symbol=self.symbol.replace('/', '_'),
                     timeframe=self.timeframe,
                     days=1,
                     seq_length=self.window_size,
-                    load_path='data/btc_usdt_1s.csv'
+                    load_path='timeseries/btc_usdt_1s.csv'
                 )
                 return df_normalized
             
-            # Fetch OHLCV data from exchange
+            # Fetch OHLCV timeseries from exchange
             ohlcv = self.exchange.fetch_ohlcv(self.symbol, self.timeframe, limit=limit)
             
             # Convert to DataFrame
@@ -231,7 +225,7 @@ class LiveTrader:
             # Drop NaN values
             df.dropna(inplace=True)
             
-            # Normalize data
+            # Normalize timeseries
             # Here we're doing a simple min-max normalization, but you might want to use a more sophisticated method
             numeric_cols = df.select_dtypes(include=[np.number]).columns
             df_normalized = df.copy()
@@ -243,7 +237,7 @@ class LiveTrader:
                     if max_val > min_val:
                         df_normalized[col] = (df[col] - min_val) / (max_val - min_val)
             
-            logger.info(f"Successfully fetched and prepared data with shape {df_normalized.shape}")
+            logger.info(f"Successfully fetched and prepared timeseries with shape {df_normalized.shape}")
             
             # Update models input size if needed
             if list(self.models.values()):
@@ -258,7 +252,7 @@ class LiveTrader:
             return df_normalized
             
         except Exception as e:
-            logger.error(f"Error fetching data: {e}")
+            logger.error(f"Error fetching timeseries: {e}")
             raise
     
     def generate_signal(self, df):
@@ -266,13 +260,13 @@ class LiveTrader:
         Generate trading signal from the ensemble models.
         
         Args:
-            df: DataFrame with normalized data
+            df: DataFrame with normalized timeseries
             
         Returns:
             Signal (-1 for sell, 0 for hold, 1 for buy)
         """
         if len(df) < self.window_size:
-            logger.warning(f"Not enough data points. Need at least {self.window_size}, got {len(df)}")
+            logger.warning(f"Not enough timeseries points. Need at least {self.window_size}, got {len(df)}")
             return 0
         
         try:
@@ -438,7 +432,7 @@ class LiveTrader:
     def run_trading_cycle(self):
         """Run a single trading cycle."""
         try:
-            # Fetch latest data
+            # Fetch latest timeseries
             df = self.fetch_latest_data()
             
             # Generate signal
@@ -620,3 +614,59 @@ def main():
 
 if __name__ == "__main__":
     main()
+import os
+import time
+import ccxt
+import pandas as pd
+import numpy as np
+from datetime import datetime, timedelta
+
+from src.config import DEFAULT_SYMBOL, DEFAULT_TIMEFRAME, DEFAULT_DAYS
+
+
+def fetch_ohlcv_data(symbol=DEFAULT_SYMBOL, timeframe=DEFAULT_TIMEFRAME, days=DEFAULT_DAYS):
+    """
+    Fetch OHLCV timeseries with second resolution.
+    Note: Most exchanges limit historical timeseries for second resolution,
+    so we'll fetch timeseries for the last 'days' days.
+    """
+    exchange = ccxt.binance()
+    
+    # Calculate start time (days ago from now)
+    since = exchange.parse8601((datetime.now() - timedelta(days=days)).isoformat())
+    
+    print(f"Fetching {timeframe} timeseries for {symbol} since {exchange.iso8601(since)}")
+    
+    # Fetch timeseries in chunks to avoid rate limits
+    all_ohlcv = []
+    current_since = since
+    
+    try:
+        while True:
+            print(f"Fetching chunk from {exchange.iso8601(current_since)}")
+            ohlcv = exchange.fetch_ohlcv(symbol, timeframe, current_since, limit=1000)
+            
+            if len(ohlcv) == 0:
+                break
+                
+            all_ohlcv.extend(ohlcv)
+            
+            # Update since for next iteration
+            current_since = ohlcv[-1][0] + 1  # +1 to avoid duplicates
+            
+            # Add delay to avoid rate limits
+            time.sleep(1)
+            
+            # Check if we've reached current time
+            if current_since >= exchange.milliseconds():
+                break
+    except Exception as e:
+        print(f"Error fetching timeseries: {e}")
+    
+    # Convert to DataFrame
+    df = pd.DataFrame(all_ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+    df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+    df.set_index('timestamp', inplace=True)
+    
+    print(f"Fetched {len(df)} timeseries points")
+    return df

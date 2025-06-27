@@ -21,7 +21,7 @@ class SignalStrategy(Strategy):
         """
         Initialize the strategy.
         """
-        # Get the Signal column from the data
+        # Get the Signal column from the timeseries
         self.signal = self.data.Signal
     
     def next(self):
@@ -41,10 +41,10 @@ class SignalStrategy(Strategy):
 
 def prepare_backtest_data(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Prepare the data for backtesting.
+    Prepare the timeseries for backtesting.
     
     Args:
-        df: DataFrame with OHLCV data and Signal column
+        df: DataFrame with OHLCV timeseries and Signal column
         
     Returns:
         DataFrame formatted for backtesting.py
@@ -116,7 +116,7 @@ def generate_signals_from_agent(env, agent, df: pd.DataFrame, window_size: int) 
     Args:
         env: Trading environment
         agent: Trained PPO agent
-        df: DataFrame with OHLCV data
+        df: DataFrame with OHLCV timeseries
         window_size: Size of the observation window
         
     Returns:
@@ -134,7 +134,7 @@ def generate_signals_from_agent(env, agent, df: pd.DataFrame, window_size: int) 
     # Start from window_size to match environment
     current_step = window_size
     
-    # Run through the data
+    # Run through the timeseries
     while current_step < len(df_signals) - 1:
         # Get action from agent
         action, _, _ = agent.choose_action(observation)
@@ -167,7 +167,7 @@ def generate_signals_from_ensemble(ensemble_model, df: pd.DataFrame, window_size
     
     Args:
         ensemble_model: Trained ensemble models
-        df: DataFrame with OHLCV data and features
+        df: DataFrame with OHLCV timeseries and features
         window_size: Size of the observation window
         threshold: Probability threshold for buy/sell decisions
         
@@ -204,7 +204,7 @@ def generate_signals_from_ensemble(ensemble_model, df: pd.DataFrame, window_size
     
     # Start from window_size
     for i in range(window_size, len(df_signals) - 1):
-        # Get data for the current window
+        # Get timeseries for the current window
         window_data = df_signals.iloc[i - window_size:i][feature_cols].values
         window_tensor = torch.tensor(window_data, dtype=torch.float32).unsqueeze(0)  # Add batch dimension
         
@@ -262,7 +262,7 @@ def run_backtest(df: pd.DataFrame, cash: float = 10000, commission: float = 0.00
     Run a backtest on the given DataFrame with trading signals.
     
     Args:
-        df: DataFrame with OHLCV data and Signal column (1=Buy, -1=Sell, 0=Hold)
+        df: DataFrame with OHLCV timeseries and Signal column (1=Buy, -1=Sell, 0=Hold)
         cash: Initial cash amount
         commission: Commission rate for trades
         plot: Whether to plot the backtest results
@@ -271,7 +271,7 @@ def run_backtest(df: pd.DataFrame, cash: float = 10000, commission: float = 0.00
     Returns:
         Dictionary with backtest metrics
     """
-    # Prepare data for backtesting
+    # Prepare timeseries for backtesting
     bt_data = prepare_backtest_data(df)
     
     # Create and run backtest
@@ -334,10 +334,10 @@ def compare_strategies(df: pd.DataFrame, strategies: Dict[str, np.ndarray],
                       cash: float = 10000, commission: float = 0.002,
                       save_path: Optional[str] = None) -> Dict[str, Dict[str, Any]]:
     """
-    Compare multiple trading strategies on the same data.
+    Compare multiple trading strategies on the same timeseries.
     
     Args:
-        df: DataFrame with OHLCV data
+        df: DataFrame with OHLCV timeseries
         strategies: Dictionary mapping strategy names to signal arrays
         cash: Initial cash amount
         commission: Commission rate for trades
@@ -432,7 +432,7 @@ def create_buy_hold_signals(df: pd.DataFrame) -> np.ndarray:
     Create signals for a buy and hold strategy.
     
     Args:
-        df: DataFrame with OHLCV data
+        df: DataFrame with OHLCV timeseries
         
     Returns:
         Array of signals (1 for buy at start, 0 elsewhere)
@@ -448,7 +448,7 @@ def create_sma_crossover_signals(df: pd.DataFrame, short_window: int = 20, long_
     Create signals based on SMA crossover strategy.
     
     Args:
-        df: DataFrame with OHLCV data
+        df: DataFrame with OHLCV timeseries
         short_window: Short moving average window
         long_window: Long moving average window
         

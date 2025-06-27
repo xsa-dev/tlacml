@@ -23,7 +23,7 @@ class CryptoTradingEnv(gym.Env):
         Initialize the trading environment.
         
         Args:
-            df: DataFrame with OHLCV data and features
+            df: DataFrame with OHLCV timeseries and features
             ensemble_model: Ensemble models for price direction prediction
             window_size: Size of the observation window
             initial_balance: Initial account balance
@@ -183,7 +183,7 @@ class CryptoTradingEnv(gym.Env):
         
         # Add ensemble prediction if available
         if self.use_ensemble and self.ensemble_model is not None:
-            # Get data for the current window
+            # Get timeseries for the current window
             window_data = self.df.loc[self.current_step - self.window_size:self.current_step - 1, self.feature_cols].values
             window_tensor = torch.tensor(window_data, dtype=torch.float32).unsqueeze(0)  # Add batch dimension
             

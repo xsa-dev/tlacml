@@ -96,7 +96,7 @@ class EnsembleModel:
         Evaluate the ensemble models on a dataset.
         
         Args:
-            dataloader: PyTorch DataLoader containing evaluation data
+            dataloader: PyTorch DataLoader containing evaluation timeseries
             
         Returns:
             Dictionary with evaluation metrics
@@ -136,17 +136,17 @@ class EnsembleModel:
     
     def optimize_weights(self, val_dataloader, num_iterations: int = 100, learning_rate: float = 0.01) -> None:
         """
-        Optimize the weights of the ensemble using gradient descent on validation data.
+        Optimize the weights of the ensemble using gradient descent on validation timeseries.
         
         Args:
-            val_dataloader: PyTorch DataLoader containing validation data
+            val_dataloader: PyTorch DataLoader containing validation timeseries
             num_iterations: Number of optimization iterations
             learning_rate: Learning rate for gradient descent
         """
         # Initialize weights
         weights = torch.tensor(self.weights, requires_grad=True)
         
-        # Collect all models predictions on validation data
+        # Collect all models predictions on validation timeseries
         all_preds = []
         all_targets = []
         

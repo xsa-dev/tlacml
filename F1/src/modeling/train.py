@@ -5,15 +5,15 @@ from clearml import Task
 import pytorch_lightning as pl
 from pytorch_lightning.callbacks import EarlyStopping
 from pytorch_lightning.loggers import TensorBoardLogger
-from data import prepare_data
+from src.timeseries.dataset import prepare_data
 
-from src.models import (
+from src.modeling.models import (
     LSTMPredictor, GRUPredictor, CNNPredictor, MLPPredictor, create_dataloaders
 )
-from src.ensemble import EnsembleModel
-from src.env import CryptoTradingEnv
-from src.ppo import PPOAgent, train_ppo
-from src.backtest import (
+from src.modeling.ensemble import EnsembleModel
+from src.modeling.env import CryptoTradingEnv
+from src.modeling.ppo import PPOAgent, train_ppo
+from src.eval.backtest import (
     run_backtest, generate_signals_from_agent, generate_signals_from_ensemble,
     compare_strategies, create_buy_hold_signals, create_sma_crossover_signals
 )
@@ -51,7 +51,7 @@ def train_predictive_models(X_train, y_train, X_val, y_val, X_test, y_test, inpu
     )
 
     # Set up logger
-    logger = TensorBoardLogger('../lightning_logs', name='predictive_models')
+    logger = TensorBoardLogger('../../logs/lightning_logs', name='predictive_models')
 
     # Initialize models
     lstm_model = LSTMPredictor(input_size=input_size, hidden_size=64, num_layers=2, output_size=2)
@@ -186,7 +186,7 @@ def train_ppo_agent(df_normalized, ensemble_model, window_size=60, n_episodes=10
         max_steps=max_steps,
         update_interval=20,
         log_interval=10,
-        save_path='../models/ppo_model.pt'
+        save_path='../../models/ppo_model.pt'
     )
 
     return agent, episode_rewards, env
@@ -297,15 +297,15 @@ def main(args):
     # Initialize ClearML task
     task = Task.init(project_name='CryptoTrading', task_name='PPO_BTC_USDT')
 
-    # Prepare data
-    print("Preparing data...")
+    # Prepare timeseries
+    print("Preparing timeseries...")
     X_train, y_train, X_val, y_val, X_test, y_test, df_normalized = prepare_data(
         symbol=args.symbol,
         timeframe=args.timeframe,
         days=args.days,
         seq_length=args.seq_length,
-        save_path=args.data_path,
-        load_path=args.data_path if args.load_data and os.path.exists(args.data_path) else None
+        save_path=args.timeseries_path,
+        load_path=args.timeseries_path if args.load_timeseries and os.path.exists(args.timeseries_path) else None
     )
 
     # Get input size
@@ -336,8 +336,7 @@ def main(args):
     )
 
     agent = None
-    env = None
-    portfolio_history = None
+
     
     # Create environment for backtesting
     env = CryptoTradingEnv(
@@ -418,7 +417,7 @@ def run_agent_backtest(env, agent, df, window_size, cash=10000, commission=0.002
     Args:
         env: Trading environment
         agent: Trained PPO agent
-        df: DataFrame with OHLCV data
+        df: DataFrame with OHLCV timeseries
         window_size: Size of the observation window
         cash: Initial cash amount
         commission: Commission rate for trades
@@ -426,7 +425,7 @@ def run_agent_backtest(env, agent, df, window_size, cash=10000, commission=0.002
     # Generate signals from agent
     df_signals = generate_signals_from_agent(env, agent, df, window_size)
 
-    # Prepare data for backtesting
+    # Prepare timeseries for backtesting
     # Convert column names to match backtesting.py requirements
     df_backtest = df_signals.copy()
 
@@ -436,7 +435,7 @@ def run_agent_backtest(env, agent, df, window_size, cash=10000, commission=0.002
         cash=cash,
         commission=commission,
         plot=True,
-        save_path='agent_backtest_results.png'
+        save_path='reports/figures/agent_backtest_results.png'
     )
 
     # Print metrics
@@ -460,7 +459,7 @@ def compare_agent_with_strategies(env, agent, df, window_size, cash=10000, commi
     Args:
         env: Trading environment
         agent: Trained PPO agent
-        df: DataFrame with OHLCV data
+        df: DataFrame with OHLCV timeseries
         window_size: Size of the observation window
         cash: Initial cash amount
         commission: Commission rate for trades
@@ -508,7 +507,7 @@ def run_ensemble_backtest(ensemble_model, df, window_size, threshold=0.55, cash=
 
     Args:
         ensemble_model: Trained ensemble models
-        df: DataFrame with OHLCV data and features
+        df: DataFrame with OHLCV timeseries and features
         window_size: Size of the observation window
         threshold: Probability threshold for buy/sell decisions
         cash: Initial cash amount
@@ -524,7 +523,7 @@ def run_ensemble_backtest(ensemble_model, df, window_size, threshold=0.55, cash=
 
     # Use default save path if not provided
     if save_path is None:
-        save_path = '../reports/ensemble_backtest_results.png'
+        save_path = 'reports/figures/ensemble_backtest_results.png'
         
     buy_signals = (df_signals['Signal'] == 1).sum()
     sell_signals = (df_signals['Signal'] == -1).sum()
@@ -539,7 +538,7 @@ def run_ensemble_backtest(ensemble_model, df, window_size, threshold=0.55, cash=
         print("\nWARNING: No signals were generated! Possible reasons:")
         print("1. Threshold might be too high - try lowering the threshold (e.g., --threshold 0.52)")
         print("2. Models might need retraining - ensure the models are properly trained")
-        print("3. Data might not have clear patterns - try with different data periods")
+        print("3. Data might not have clear patterns - try with different timeseries periods")
 
     # Run backtest
     metrics = run_backtest(
@@ -570,7 +569,7 @@ def run_ensemble_backtest(ensemble_model, df, window_size, threshold=0.55, cash=
     if metrics['total_return'] < metrics['buy_hold_return']:
         print("\nStrategy underperformed Buy & Hold. Consider:")
         print("- Adjusting the threshold")
-        print("- Retraining models with more data")
+        print("- Retraining models with more timeseries")
         print("- Adding more features to the models")
 
     return metrics
