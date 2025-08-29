@@ -2,4 +2,5 @@
 **.csv**
 **.png**
 **lightning_logs**
-
+.idea
+**__pycache__**
